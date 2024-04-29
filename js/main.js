@@ -6,6 +6,15 @@ document.addEventListener("DOMContentLoaded", function() {
   const answer_result = document.querySelector('.answer_result');
   const inputField = document.querySelector('#myFormInput');
   const formAnwser = document.getElementById('form-url');
+  
+  
+  inputField.addEventListener('input', function() {
+    if (inputField.value.trim() !== '') {
+      submitButton.classList.add('activeURL');
+    } else {
+      submitButton.classList.remove('activeURL');
+    }
+  });
 
   form.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -53,5 +62,23 @@ document.addEventListener("DOMContentLoaded", function() {
       dropdownMenu.classList.remove('open');
       headerArrow.classList.remove('arrow_rotate');
     }
+  });
+
+  const navLinks = document.querySelectorAll('.main-functions-nav__link');
+  
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      
+      if (targetElement) {
+        const yOffset = -80; // adjust this value as needed to offset for sticky header
+        const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        
+        window.scrollTo({top: y, behavior: 'smooth'});
+      }
+    });
   });
 });
