@@ -58,10 +58,24 @@
           </p>
           <p class="main-welcome-content-title__after">Создаём контент для социальных сетей и блогов</p>
         </div>
-        <form class="main-welcome-form">
-          <input class="main-welcome-form__input" type="text" placeholder="Вставьте ссылку здесь...">
-          <button class="main-welcome-form__button" type="submit">Начать транскрипцию</button>
+        <form id="myForm" class="main-welcome-form">
+          <input id="myFormInput" class="main-welcome-form__input" type="text" placeholder="Вставьте ссылку здесь...">
+          <button id="submitButton" class="main-welcome-form__button" type="submit">Начать транскрипцию</button>
         </form>
+        <div id="loader" style="display: none;">
+          <img src="./img/loader.svg" alt="Spinner" class="spinner">
+          <p>Загрузка...</p>
+        </div>
+        <div id="answer" class="answer" style="display: none;">
+          <input disabled type="search" id="form-url">
+          <div class="buttons">
+            <button class="answer__button active">Оригинальный текст</button>
+            <button class="answer__button">Рерайт</button>
+            <button class="answer__button">Пост в Telegram</button>
+            <button class="answer__button">Статья для блога</button>
+          </div>
+          <p class="answer_result">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+        </div>
       </div>
     </section>
 

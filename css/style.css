@@ -237,6 +237,7 @@ input {
 .main-welcome {
   background-color: var(--black-background-color);
 
+  position: relative;
   height: 100vh;
   width: 100vw;
 
@@ -356,7 +357,7 @@ input {
   font-weight: 400;
   line-height: 18px;
   text-align: left;
-  color: var(--gray-text-color);
+  color: var(--clear-white-color);
 
   border-radius: 400px;
   border: none;
@@ -1175,4 +1176,98 @@ input {
 
 .second_button_text > p{
   color: var(--clear-white-color);
+}
+
+#loader {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.spinner {
+  animation: spin 1s linear infinite; /* Анимация вращения */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); /* Начальный угол вращения */
+  }
+  to {
+    transform: rotate(360deg); /* Конечный угол вращения */
+  }
+}
+
+.answer {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.answer__button {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: rgba(147, 142, 155, 1);
+  background-color: rgba(147, 142, 155, 0.2);
+
+  padding: 12px 18px 12px 48px;
+  border-radius: 400px;
+  border: none;
+}
+
+.active {
+  color: var(--clear-white-color);
+  background: linear-gradient(96.34deg, #B128F2 1.46%, #F33DB5 108.7%);
+}
+
+.answer_result {
+  display: flex;
+  padding: 40px;
+  background-color: var(--clear-white-color);
+
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  text-align: left;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.07)
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#form-url {
+  width: 100%;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: var(--clear-white-color);
+
+  background-color: rgba(147, 142, 155, 0.2);
+  border-radius: 400px;
+
+  padding: 24px 96px 24px 48px;
+
+  background-image: url(../img/answer_img.svg);
+  background-position: right center;
+  background-position-x: calc(100% - 21px);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
 }
