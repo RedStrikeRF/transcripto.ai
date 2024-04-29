@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transcripto.ai</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-logo">
+      <!-- <img src="" class="header-logo__img" alt="Логотип Transcripto.ai"> -->
+      <p>LOGO</p>
+    </div>
+    <nav class="header-nav">
+      <a href="#" class="header-nav__link">
+        Описание услуг
+      </a>
+      <a href="#" class="header-nav__link">
+        Ценообразование
+      </a>
+      <a href="#" class="header-nav__link">
+        Обучающие материалы
+      </a>
+      <a href="#" class="header-nav__link">
+        Контакты
+      </a>
+    </nav>
+    <div class="header-dropdown">
+      <div class="header-dropdown__toggle"><p id="dropdown-text">RU</p><span class="header-dropdown__toggle__arrow"></span></div>
+      <div class="header-dropdown-menu">
+        <div class="header-dropdown__item">RU</div>
+        <div class="header-dropdown__item">EN</div>
+        <div class="header-dropdown__item">DE</div>
+      </div>
+    </div>
+    <div class="header-buttons">
+      <button class="header-buttons__button">Вход</button>
+      <button class="header-buttons__button">Регистрация</button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="main-welcome">
+      <div class="main-welcome-content">
+        <div class="main-welcome-content-title">
+          <p class="main-welcome-content-title__before">
+            Транскрибируем ваше
+          </p>
+          <p class="main-welcome-content-title-centre">
+            <span class="main-welcome-content-title-centre__text">
+              <span>аудио</span>
+            </span>
+            <span class="main-welcome-content-title-centre__text">И</span>
+            <span class="main-welcome-content-title-centre__text">
+              <span>видео</span>
+            </span>
+            <span class="main-welcome-content-title-centre__text">В текст</span>
+          </p>
+          <p class="main-welcome-content-title__after">Создаём контент для социальных сетей и блогов</p>
+        </div>
+        <form class="main-welcome-form">
+          <input class="main-welcome-form__input" type="text" placeholder="Вставьте ссылку здесь...">
+          <button class="main-welcome-form__button" type="submit">Начать транскрипцию</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="main-functions">
+      <h1 class="main-functions__title">
+        <span>Фунционал</span> сервиса
+      </h1>
+      <span class="main-functions__line"></span>
+      <div class="main-functions-wrapper">
+        <nav class="main-functions-nav">
+          <a class="main-functions-nav__link" href="#files">Форматы файлов</a>
+          <a class="main-functions-nav__link" href="#AI">Использование AI</a>
+          <a class="main-functions-nav__link" href="#text">Редактирование текста</a>
+          <a class="main-functions-nav__link" href="#content">Генерация разного контента</a>
+          <a class="main-functions-nav__link" href="#security">Безопасность данных</a>
+          <a class="main-functions-nav__link" href="#LK">Личный кабинет</a>
+        </nav>
+        <div class="main-functions-content">
+          <div id="files" class="main-functions-content-block">
+            <h3 class="main-functions-content__title">Поддержка множества<br>форматов файлов</h3>
+            <div class="main-functions-content-block-content">
+              <div class="main-functions-content-block-content-block">
+                <h4 class="main-functions-content-block-content-block__title">Аудио и видео форматы:</h4>
+                <p class="main-functions-content-block-content-block__descr">MP3, WAV,
+                  MP4, AVI. Это покажет гибкость сервиса в работе 
+                  с различными
+                  источниками данных.</p>
+                <div class="main-functions-content-block-content-block-add">
+                  <span class="main-functions-content-block-content-block-add__item"><span>MP3</span></span>
+                  <span class="main-functions-content-block-content-block-add__item"><span>WAV</span></span>
+                  <span class="main-functions-content-block-content-block-add__item"><span>MP4</span></span>
+                  <span class="main-functions-content-block-content-block-add__item"><span>AVI</span></span>
+                </div>
+              </div>
+              <div class="main-functions-content-block-content-block">
+                <h4 class="main-functions-content-block-content-block__title">Интеграция с платформами:</h4>
+                <p class="main-functions-content-block-content-block__descr">Описание возможности прямой загрузки файлов с популярных платформ, Vimeo, Dropbox или Google Drive.</p>
+                <div class="main-functions-content-block-content-block-add">
+                  <span class="main-functions-content-block-content-block-add__item"><img src="./img/Vector.png" class="item_img"></span>
+                  <span class="main-functions-content-block-content-block-add__item"><img src="./img/googledrive.png" class="item_img"></span>
+                  <span class="main-functions-content-block-content-block-add__item"><img src="./img/dropbox.png" class="item_img"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="AI" class="main-functions-content-block">
+            <h3 class="main-functions-content__title">Использование AI для транскрипции<br>и генерации контента</h3>
+            <div class="main-functions-content-block-content">
+              <div class="main-functions-content-block-content-block content-block_paddings">
+                <div class="main-functions-content-block-content-block__title_wrapper item_padding40px">
+                  <h4 class="main-functions-content-block-content-block__title">Технологии распознавания речи:</h4>
+                  <p class="main-functions-content-block-content-block__descr">Краткое описание
+                    используемых алгоритмов машинного обучения или
+                    искусственного интеллекта для точной и быстрой транскрипции.</p>
+                </div>
+                <div class="main-functions-content-block-content-block-add block-add_flex-direction">
+                  <div class="main-functions-content-block-content-block-add__item item_width item_height item_radius">
+                    <img class="item_img item_img_size" src="./img/big_dropbox.png" alt="">
+                  </div>
+                  <div class="main-functions-content-block-content-block-add__item item_width item_height item_radius">
+                    <img class="item_img item_img_size" src="./img/big_dropbox.png" alt="">
+                  </div>
+                  <div class="main-functions-content-block-content-block-add__item item_width item_height item_radius">
+                    <img class="item_img item_img_size" src="./img/big_dropbox.png" alt="">
+                  </div>
+                  <div class="main-functions-content-block-content-block-add__item item_width item_height item_radius">
+                    <img class="item_img item_img_size" src="./img/big_dropbox.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="main-functions-content-block-content-block content-block_paddings">
+                <h4 class="main-functions-content-block-content-block__title item_padding20px item_margin-bottom30px">Улучшение качества 
+                  транскрипции:
+                </h4>
+                <div class="main-functions-content-block-content-block-add item_max-widht100 item_margin-bottom40px gap_30px block-add_flex-direction item_padding20px">
+                  <div class="main-functions-content-block-content-block-add-item">
+                    <h5 class="main-functions-content-block-content-block-add-item__owner">
+                      Оператор
+                    </h5>
+                    <p class="main-functions-content-block-content-block-add-item__descr">
+                      Здравствуйте, Служба поддержки, 
+                      как я могу помочь?                       
+                    </p>
+                  </div>
+                  <div class="main-functions-content-block-content-block-add-item">
+                    <h5 class="main-functions-content-block-content-block-add-item__owner">
+                      Пользователь
+                    </h5>
+                    <p class="main-functions-content-block-content-block-add-item__descr">
+                      Здравствуйте, у меня есть... этот... как его... проблема с входом в аккаунт, я... пытаюсь и не получается. 
+                    </p>
+                  </div>
+                  <div class="main-functions-content-block-content-block-add-item">
+                    <h5 class="main-functions-content-block-content-block-add-item__owner">
+                      Оператор
+                    </h5>
+                    <p class="main-functions-content-block-content-block-add-item__descr">
+                      Хорошо, вы используете имя пользователя и пароль, которые вам дали? 
+                    </p>
+                  </div>
+                  <div class="main-functions-content-block-content-block-add-item">
+                    <h5 class="main-functions-content-block-content-block-add-item__owner">
+                      Пользователь
+                    </h5>
+                    <p class="main-functions-content-block-content-block-add-item__descr">
+                      Да, всё делаю как говорили, но оно пишет, что неправильные. Может быть... я не знаю, что делать. 
+                    </p>
+                  </div>
+                  <div class="main-functions-content-block-content-block-add-item">
+                    <h5 class="main-functions-content-block-content-block-add-item__owner">
+                      Оператор
+                    </h5>
+                    <p class="main-functions-content-block-content-block-add-item__descr">
+                      Понял, давайте проверим вашу информацию. Можете назвать ваш адрес электронной почты? 
+                    </p>
+                  </div>
+                </div>
+
+                <div class="main-functions-content-block-content-block-add block-add_flex-direction gap_30px gray_background item_radius10px item_padding20pxallside">
+                  <div class="main-functions-content-block-content-block-add-item ">
+                    <h5 class="main-functions-content-block-content-block-add-item__owner item_owner-white-color">
+                      Оператор
+                    </h5>
+                    <p class="main-functions-content-block-content-block-add-item__descr">
+                      Понял, давайте проверим вашу информацию. Можете назвать ваш адрес электронной почты? 
+                    </p>
+                  </div>
+                  <div class="main-functions-content-block-content-block-add-item">
+                    <h5 class="main-functions-content-block-content-block-add-item__owner item_owner-white-color">
+                      Оператор
+                    </h5>
+                    <p class="main-functions-content-block-content-block-add-item__descr">
+                      Понял, давайте проверим вашу информацию. Можете назвать ваш адрес электронной почты? 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="text" class="main-functions-content-block">
+            <h3 class="main-functions-content__title">Функции редактирования<br>и корректировки текста</h3>
+            <div class="main-functions-content-block-content">
+              <div class="main-functions-content-block-content-block">
+                <h4 class="main-functions-content-block-content-block__title">Обработка полученного текста от вас:</h4>
+                <p class="main-functions-content-block-content-block__descr">Перевод с 40+ языков на
+                  русский. 
+                  Правка грамматических ошибок, добавление
+                  стилистических улучшений.
+                </p>
+                <div class="main-functions-content-block-content-block-add gap_20px">
+                  <span class="main-functions-content-block-content-block-add__item delete_before delete_padding"><img src="./img/russiaFlag.png" class="item_img"></span>
+                  <span class="main-functions-content-block-content-block-add__item delete_before delete_padding"><img src="./img/Germany (DE).png" class="item_img"></span>
+                  <span class="main-functions-content-block-content-block-add__item delete_before delete_padding"><img src="./img/France (FR).png" class="item_img"></span>
+                  <span class="main-functions-content-block-content-block-add__item delete_before delete_padding"><img src="./img/United States of America (US).png" class="item_img"></span>
+                  <span class="main-functions-content-block-content-block-add__item delete_before delete_padding"><img src="./img/Sweden (SE).png" class="item_img"></span>
+                  <span class="main-functions-content-block-content-block-add__item delete_before delete_padding flags_text">36+</span>
+                </div>
+              </div>
+              <div class="main-functions-content-block-content-block">
+                <h4 class="main-functions-content-block-content-block__title">Персонализация <br>
+                  вывода:</h4>
+                <p class="main-functions-content-block-content-block__descr">Возможность адаптировать стиль
+                  текста под конкретные нужды пользователя, например:
+                </p>
+                <div class="main-functions-content-block-content-block-add new_flex">
+                  <span class="flags_concrete">Формальный</span>
+                  <span class="flags_concrete">Неформальный</span>
+                  <span class="flags_concrete">Академический</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="content" class="main-functions-content-block">
+            <h3 class="main-functions-content__title">Генерация различных<br>типов контента</h3>
+            <div class="main-functions-content-block-content">
+              <div class="main-functions-content-block-content-block">
+                <h4 class="main-functions-content-block-content-block__title">Адаптация контента:</h4>
+                <p class="main-functions-content-block-content-block__descr">Механизмы адаптации
+                  транскрибированного текста под разные форматы, такие как:
+                </p>
+                <div class="main-functions-content-block-content-block-add new_flex">
+                  <span class="flags_concrete">Научные статьи</span>
+                  <span class="flags_concrete">Блоги</span>
+                  <span class="flags_concrete">Рекламные материалы</span>
+                  <span class="flags_concrete">Посты в соцсетях</span>
+                </div>
+              </div>
+              <div class="main-functions-content-block-content-block pos_rel">
+                <h4 class="main-functions-content-block-content-block__title">SEO-оптимизация:</h4>
+                <p class="main-functions-content-block-content-block__descr">Инструменты для включения ключевых слов,
+                  которые помогут улучшить видимость контента 
+                  в поисковых
+                  системах.
+                </p>
+                <img src="./img/magicHat.png" class="magicHat" alt="#">
+              </div>
+            </div>
+          </div>
+
+          <div id="security" class="main-functions-content-block">
+            <h3 class="main-functions-content__title">Безопасность и конфиденциальность ваших данных</h3>
+            <div class="main-functions-content-block-content">
+              <div class="main-functions-content-block-content-block pos_rel min-height408px">
+                <h4 class="main-functions-content-block-content-block__title">Защита данных:</h4>
+                <p class="main-functions-content-block-content-block__descr">Защита
+                  персональной информации и данных пользователей,
+                  шифрование передачи и хранения данных.
+                </p>
+                <img src="./img/shield.png" class="magicHat" alt="#">
+              </div>
+              <div class="main-functions-content-block-content-block pos_rel min-height408px">
+                <h4 class="main-functions-content-block-content-block__title">Соответствие нормативам: </h4>
+                <p class="main-functions-content-block-content-block__descr">Упоминание о соответствии 
+                  с
+                  международными стандартами защиты данных, такими как GDPR.
+                </p>
+                <img src="./img/document.png" class="magicHat" alt="#">
+              </div>
+
+              <div class="main-functions-content-block-content-block pos_rel third_el">
+                <h4 class="main-functions-content-block-content-block__title">Интеграция с социальными сетями 
+                  для автоматической
+                  публикации созданного контента.</h4>
+                <img src="./img/messengers.png" class="magicHat third_el_img" alt="#">
+              </div>
+            </div>
+          </div>
+
+          <div id="LK" class="main-functions-content-block">
+            <div class="main-functions-content-block-wrapper">
+              <h3 class="main-functions-content__title">Личный<br>кабинет пользователя</h3>
+              <p class="main-functions-content__descr">Для эффективного управления результатами транскрибации,платформа предоставляет личный кабинет подробное описание ключевых функций:</p>
+            </div>
+            <div class="main-functions-content-block-items">
+              <div class="main-functions-content-block-items-title-block min-height408px width">
+                <h2 class="main-functions-content-block-items-title-block__title">Хранение результатов 
+                  транскрибации</h2>
+              </div>
+              <div class="main-functions-content-block-items-content-block min-height408px width">
+                <h4 class="main-functions-content-block-content-block__title">Архивация файлов: </h4>
+                  <p class="main-functions-content-block-content-block__descr">Пользователи могут сохранять все
+                    результаты транскрибированных файлы в своём аккаунте. 
+                    Это
+                    удобно для истории работ 
+                    и доступа в любое время.
+                  </p>
+                  <img src="./img/save.png" class="item-content-block__img" alt="#">
+              </div>
+              <div class="main-functions-content-block-items-content-block min-height408px width">
+                <h4 class="main-functions-content-block-content-block__title">Папки и категоризация: </h4>
+                <p class="main-functions-content-block-content-block__descr">Возможность создания папок для
+                  организации файлов по проектам, датам, темам или любым
+                  другим критериям.
+                </p>
+                <img src="./img/files.png" class="item-content-block__img" alt="#">
+              </div>
+              <div class="main-functions-content-block-items-content-block min-height408px width">
+                <h4 class="main-functions-content-block-content-block__title">Поиск по текстам:</h4>
+                <p class="main-functions-content-block-content-block__descr">Функция поиска позволяет находить нужные
+                  документы
+                  по ключевым словам 
+                  в транскрибированном тексте.
+                </p>
+                <img src="./img/search.png" class="item-content-block__img" alt="#">
+              </div>
+            </div>
+            <div class="main-functions-content-block-items">
+              <div class="main-functions-content-block-items-title-block min-height408px width">
+                <h2 class="main-functions-content-block-items-title-block__title">Редактирование 
+                  и обработка текста</h2>
+              </div>
+              <div class="main-functions-content-block-items-content-block min-height408px width">
+                <h4 class="main-functions-content-block-content-block__title">Редактор текста:</h4>
+                <p class="main-functions-content-block-content-block__descr">Интегрированный текстовый редактор для коррекции 
+                  и форматирования транскрибированных документов.
+                </p>
+                <img src="./img/redactor.png" class="item-content-block__img" alt="#">
+              </div>
+              <div class="main-functions-content-block-items-content-block min-height408px width">
+                <h4 class="main-functions-content-block-content-block__title">Шаблоны документов: </h4>
+                <p class="main-functions-content-block-content-block__descr">Возможность использовать
+                  предустановленные или создавать собственные шаблоны для
+                  различных типов
+                  материалов.
+                </p>
+                <img src="./img/documentForm.png" class="item-content-block__img" alt="#">
+              </div>
+              <div class="main-functions-content-block-items-content-block min-height408px width">
+                <h4 class="main-functions-content-block-content-block__title">Экспорт результатов: </h4>
+                <p class="main-functions-content-block-content-block__descr">Функция экспорта транскрибированных
+                  текстов в различные форматы, включая PDF, DOCX, TXT и другие.
+                </p>
+                <img src="./img/export.png" class="item-content-block__img" alt="#">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-payment">
+      <h2 class="main-payment__title"><span>Тарифные</span>планы</h2>
+
+      <div class="main-payment-wrapper">
+
+        <div class="main-payment-content-wrapper">
+          <div class="main-payment-content-about first">
+            <h4 class="main-payment-content-about__title first_title">Base</h4>
+            <p class="main-payment-content-about__descr first_descr">До <span>1 часа </span>аудио или видео в месяц</p>
+            <div class="main-payment-content-about-advantages">
+              <p class="main-payment-content-about-advantage first_advantage">Автоматическая транскрипция аудио/видео</p>
+              <p class="main-payment-content-about-advantage first_advantage">Стандартные опции редактирования текста</p>
+              <p class="main-payment-content-about-advantage first_advantage">Экспорт результатов в TXT и PDF форматы</p>
+              <p class="main-payment-content-about-advantage first_advantage">Основная поддержка через форум и FAQ</p>
+            </div>
+            <div class="main-payment-block">
+              <div class="main-payment-block-prices"></div>
+              <button class="main-payment-block_payment-button"><p class="button_text">Оставить заявку</p></button>
+            </div>
+          </div>
+          
+          <div class="main-payment-content-advantages">
+            <h4 class="main-payment-content-advantages__title">Идеален для:</h4>
+            <div class="main-payment-content-advantages-wrapper">
+              <span class="main-payment-content-advantage">Индивидуальных пользователей</span>
+              <span class="main-payment-content-advantage">Cтудентов</span>
+              <span class="main-payment-content-advantage">Фрилансеров</span>
+              <span class="main-payment-content-advantage">Начинающих блогеров</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-payment-content-wrapper">
+          <div class="main-payment-content-about second">
+            <h4 class="main-payment-content-about__title second_title">PRO</h4>
+            <p class="main-payment-content-about__descr second_descr">До <span>10 часов</span> аудио или видео в месяц.</p>
+            <div class="main-payment-content-about-advantages">
+              <p class="main-payment-content-about-advantage second_advantage">Все функции базового плана</p>
+              <p class="main-payment-content-about-advantage second_advantage">Генерация контента для соцсетей и блогов</p>
+              <p class="main-payment-content-about-advantage second_advantage">Расширенные опции редактирования</p>
+              <p class="main-payment-content-about-advantage second_advantage">Интеграция с популярными платформами</p>
+              <p class="main-payment-content-about-advantage second_advantage">Экспорт в дополнительные форматы</p>
+              <p class="main-payment-content-about-advantage second_advantage">Приоритетная техническая поддержка</p>
+            </div>
+            <div class="main-payment-block">
+              <div class="main-payment-block-prices"></div>
+              <button class="main-payment-block_payment-button second_button_text"><p class="button_text">Оставить заявку</p></button>
+            </div>
+          </div>
+          
+          <div class="main-payment-content-advantages">
+            <h4 class="main-payment-content-advantages__title">Идеален для:</h4>
+            <div class="main-payment-content-advantages-wrapper add">
+              <span class="main-payment-content-advantage secondAdvantages">Профессиональных журналистов</span>
+              <span class="main-payment-content-advantage secondAdvantages">Малых и средних предприятий</span>
+              <span class="main-payment-content-advantage secondAdvantages">Маркетологов</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-payment-content-wrapper">
+          <div class="main-payment-content-about third">
+            <h4 class="main-payment-content-about__title third_title">Corporate</h4>
+            <p class="main-payment-content-about__descr third_descr"><span>Неограниченное </span>количество часов</p>
+            <div class="main-payment-content-about-advantages">
+              <p class="main-payment-content-about-advantage third_advantage">Все функции профессионального плана</p>
+              <p class="main-payment-content-about-advantage third_advantage">Многопользовательский доступ с индивидуальными настройками</p>
+              <p class="main-payment-content-about-advantage third_advantage">Настройки и персонализации под конкретные нужды организации</p>
+              <p class="main-payment-content-about-advantage third_advantage">Расширенные SEO-инструменты и аналитика</p>
+              <p class="main-payment-content-about-advantage third_advantage">Персональный менеджер проекта</p>
+              <p class="main-payment-content-about-advantage third_advantage">Выделенная команда поддержки и персональный менеджер.</p>
+            </div>
+            <div class="main-payment-block">
+              <div class="main-payment-block-prices"></div>
+              <button class="main-payment-block_payment-button"><p class="button_text">Оставить заявку</p></button>
+            </div>
+
+          </div>
+          <div class="main-payment-content-advantages">
+            <h4 class="main-payment-content-advantages__title">Идеален для:</h4>
+            <div class="main-payment-content-advantages-wrapper">
+              <span class="main-payment-content-advantage">Активно использующих контент.</span>
+              <span class="main-payment-content-advantage">Крупных организаций</span>
+              <span class="main-payment-content-advantage">Медиакомпаний</span>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+
+      <div class="main-payment-free">
+        <h3 class="main-payment-free__title">Бесплатная пробная версия</h3>
+        <p class="main-payment-free__descr">Для всех платных планов предлагается 14-дневная бесплатная пробная
+          версия, позволяющая пользователям оценить полный функционал
+          сервиса перед покупкой подписки. Это поможет увеличить доверие
+          пользователей и способствовать 
+          их переходу на платные планы после
+          окончания пробного периода.</p>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="footer-rights">
+      <h3 class="footer-rights__logo">LOGO</h3>
+      <p class="footer-rights__year">2024 ©</p>
+    </div>
+    <adress class="footer-contacts">
+      <a href="#" class="footer-contacts__link">
+        <img class="footer-contacts__img" src="./img/mail.png" alt="mail">
+      </a>
+      <a href="#" class="footer-contacts__link">
+        <img class="footer-contacts__img" src="./img/youtube.png" alt="youtube">
+      </a>
+      <a href="#" class="footer-contacts__link">
+        <img class="footer-contacts__img" src="./img/telegram.png" alt="telegram">
+      </a>
+    </adress>
+  </footer>
+  <script src="./js/main.js"></script>
+</body>
+</html>
