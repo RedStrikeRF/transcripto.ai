@@ -79,8 +79,8 @@ input {
   gap: 60px;
   flex-wrap: wrap;
   align-items: center;
-
-  height: 16px;
+  justify-content: center;
+  
   margin-right: 145px;
 }
 
@@ -420,12 +420,13 @@ input {
 
 .main-functions {
   position: relative;
-  padding: 120px 200px 60px;
+  padding: 120px min(200px, 8%) 60px;
 
   display: flex;
   align-items: start;
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 60px;
 }
 
@@ -434,7 +435,7 @@ input {
   font-size: 64px;
   font-weight: 700;
   line-height: 89.6px;
-  text-align: left;
+  text-align: center;
   color: var(--clear-white-color);
   text-transform: uppercase;
   height: 96px;
@@ -531,6 +532,7 @@ input {
 
 .main-functions-content__title {
   font-family: "Roboto", sans-serif;
+  width: 100%;
   font-size: 36px;
   font-weight: 700;
   line-height: 50.4px;
@@ -576,7 +578,7 @@ input {
   justify-content: flex-start;
   flex-wrap: wrap;
   width: calc((100% - 20px) / 2);
-  min-width: 400px;
+  min-width: 300px;
 }
 
 .main-functions-content-block-content-block__title {
@@ -932,7 +934,7 @@ input {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  padding: 0 300px;
+  padding: 0 max(300px, 10%);
 }
 
 .main-payment__title {
@@ -940,7 +942,7 @@ input {
   font-size: 64px;
   font-weight: 700;
   line-height: 89.6px;
-  text-align: left;
+  text-align: center;
   color: var(--clear-white-color);
 
   display: flex;
@@ -1467,7 +1469,8 @@ input {
     align-items: center;
     justify-content: center;
     gap: 40px;
-    max-width: 350px;
+    width: 100%;
+    max-width: 100%;
     min-width: 350px;
   }
 
@@ -1496,7 +1499,7 @@ input {
 
   .third_el {
     min-width: 350px;
-    max-width: 350px;
+    max-width: 100%;
   }
   .main-functions-content-block {
     gap: 30px;
@@ -1653,11 +1656,17 @@ input {
     min-width: 350px;
   }
 
+  .width {
+    width: 100%;
+  }
   .main-functions-content-block-items-content-block {
     padding: 40px 15px;
     align-items: center;
   }
 
+  .main-functions-content-block-items-title-block__title {
+    text-align: center;
+  }
   .main-functions-content-block-content-block__title {
     margin-top: 60px;
     font-size: 20px;
@@ -1685,6 +1694,7 @@ input {
   }
 
   .header-buttons {
+    
     align-items: flex-end;
     flex-direction: column;
   }
@@ -1764,6 +1774,8 @@ input {
     gap: 40px;
     padding: 40px 15px;
     border-radius: 20px;
+    max-width: 100%;
+    width: 100%;
   }
 
   .main-payment-content-wrapper:nth-child(1) {
@@ -1889,4 +1901,50 @@ input {
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-start;
+}
+
+@media(max-width: 1000px) {
+  .main-functions-wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .main-payment__title {
+    justify-content: center;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .main-functions-content__title {
+    text-align: center;
+  }
+
+  .main-functions-content-block {
+    align-items: center;
+  }
+
+  .main-functions-content-block-items {
+    align-items: center;
+    flex-direction: column;
+  }
+  .main-functions-nav {
+    position: static;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-functions__line {
+    margin-top: 20px;
+  }
+
+  .header-nav {
+    margin-right: 0;
+  }
 }
