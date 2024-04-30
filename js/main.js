@@ -8,6 +8,20 @@ document.addEventListener("DOMContentLoaded", function() {
   const formAnwser = document.getElementById('form-url');
   const header_pop_up = document.querySelector('.header-pop-up');
   const header_pop_up_menu = document.querySelector('.header-pop-up-menu');
+  const buttons = document.querySelectorAll('.answer__button');
+
+  buttons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        // Удаление класса 'active' у всех кнопок
+        buttons.forEach(function(btn) {
+            btn.classList.remove('active');
+        });
+        
+        // Добавление класса 'active' только к нажатой кнопке
+        this.classList.add('active');
+    });
+  });
+
   inputField.addEventListener('input', function() {
     if (inputField.value.trim() !== '') {
       submitButton.classList.add('activeURL');
@@ -23,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
   form.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    formAnwser.value = inputField.value; // Предотвращаем отправку формы по умолчанию
+    formAnwser.value = inputField.value ? inputField.value : "Контента не было"; // Предотвращаем отправку формы по умолчанию
     loader.style.display = 'block';
     form.style.display = 'none'; // Показываем loader
     submitButton.disabled = true; // Отключаем кнопку отправки, чтобы избежать повторных отправок
