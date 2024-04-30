@@ -6,14 +6,18 @@ document.addEventListener("DOMContentLoaded", function() {
   const answer_result = document.querySelector('.answer_result');
   const inputField = document.querySelector('#myFormInput');
   const formAnwser = document.getElementById('form-url');
-  
-  
+  const header_pop_up = document.querySelector('.header-pop-up');
+  const header_pop_up_menu = document.querySelector('.header-pop-up-menu');
   inputField.addEventListener('input', function() {
     if (inputField.value.trim() !== '') {
       submitButton.classList.add('activeURL');
     } else {
       submitButton.classList.remove('activeURL');
     }
+  });
+
+  header_pop_up.addEventListener('click', function() {
+    header_pop_up_menu.classList.toggle('show');
   });
 
   form.addEventListener('submit', function(event) {
