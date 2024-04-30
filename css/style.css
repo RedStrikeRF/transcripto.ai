@@ -1924,6 +1924,7 @@ input {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    position: static;
   }
   .main-functions-content__title {
     text-align: center;
