@@ -1479,7 +1479,23 @@ input {
     max-width: 320px;
     text-transform: uppercase;
   }
-  
+
+  .answer {
+    width: 320px;
+  }
+  .answer__button {
+    padding: 10px 16px 10px 38px;
+  }
+
+  .buttons {
+    flex-direction: row;
+  }
+  .form-url {
+    width: 100%;
+  }
+  .answer_result {
+    display: none;
+  }
   .main-welcome-content-mobile-descr span {
     padding: 1px 12px 1px 38px;
     border-radius: 200px;
