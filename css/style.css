@@ -282,6 +282,7 @@ input {
   line-height: 89.6px;
   text-align: center;
   color: var(--clear-white-color);
+  max-width: 80%;
 
   text-transform: uppercase;
 }
@@ -293,6 +294,7 @@ input {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  max-width: 80%;
 }
 
 .main-welcome-content-title-centre__text {
@@ -356,6 +358,7 @@ input {
   line-height: 25.2px;
   text-align: center;
   color: var(--gray-text-color);
+  max-width: 80%;
 
   margin-top: 30px;
 }
@@ -365,6 +368,7 @@ input {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -1948,5 +1952,14 @@ input {
 
   .header-nav {
     margin-right: 0;
+  }
+}
+
+@media(max-width: 900px) {
+  .main-welcome-content-title__before {
+    font-size: 42px;
+  }
+  .main-welcome-content-title-centre__text {
+    font-size: 42px;
   }
 }
