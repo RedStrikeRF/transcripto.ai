@@ -948,6 +948,7 @@ input {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -980,6 +981,7 @@ input {
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
+  min-width: 650px;
 
   border: 2px solid rgba(39, 38, 41, 1);
   border-radius: 20px;
