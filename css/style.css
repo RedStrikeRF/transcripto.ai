@@ -1659,6 +1659,7 @@ input {
 
   .header-dropdown__toggle {
     max-width: 60px;
+    display: none;
   }
 
   .header-dropdown {
