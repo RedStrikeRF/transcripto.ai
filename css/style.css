@@ -1420,6 +1420,62 @@ input {
   background-color: rgba(248, 247, 252, 1);
 }
 
+@media(max-width: 1000px) {
+  .main-functions-wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .main-payment__title {
+    justify-content: center;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: static;
+  }
+  .main-functions-content__title {
+    text-align: center;
+  }
+
+  .main-functions-content-block {
+    align-items: center;
+  }
+
+  .main-functions-content-block-items {
+    align-items: center;
+    flex-direction: column;
+  }
+  .main-functions-nav {
+    position: static;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-functions__line {
+    margin-top: 20px;
+  }
+
+  .header-nav {
+    margin-right: 0;
+  }
+}
+
+@media(max-width: 900px) {
+  .main-welcome-content-title__before {
+    font-size: 42px;
+  }
+  .main-welcome-content-title-centre__text {
+    font-size: 42px;
+  }
+}
+
 @media(max-width: 500px) {
   .main-welcome {
     padding: 0 15px;
@@ -1569,6 +1625,7 @@ input {
   }
 
   .header {
+    flex-direction: row;
     position: relative;
     justify-content: space-between;
     align-items: flex-start;
@@ -1909,58 +1966,3 @@ input {
   justify-content: flex-start;
 }
 
-@media(max-width: 1000px) {
-  .main-functions-wrapper {
-    flex-direction: column;
-    gap: 50px;
-  }
-
-  .main-payment__title {
-    justify-content: center;
-  }
-
-  .header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    position: static;
-  }
-  .main-functions-content__title {
-    text-align: center;
-  }
-
-  .main-functions-content-block {
-    align-items: center;
-  }
-
-  .main-functions-content-block-items {
-    align-items: center;
-    flex-direction: column;
-  }
-  .main-functions-nav {
-    position: static;
-    flex-direction: row;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .main-functions__line {
-    margin-top: 20px;
-  }
-
-  .header-nav {
-    margin-right: 0;
-  }
-}
-
-@media(max-width: 900px) {
-  .main-welcome-content-title__before {
-    font-size: 42px;
-  }
-  .main-welcome-content-title-centre__text {
-    font-size: 42px;
-  }
-}
